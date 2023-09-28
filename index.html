@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>ピ逃げの達人 -Touch and Away-</title>
+    <meta charset="UTF-8" name="viewport" content="width=800 user-scalable=no" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.ico" />
+    <style>
+        html {
+            background-color: black;
+            touch-action: manipulation;
+        }
+
+        .screen {
+            text-align: center;
+            width: 650px;
+            height: 750px;
+            border-radius: 40px;
+            padding: 20px;
+            background-color: darkgreen;
+            margin: auto;
+        }
+
+        .display {
+            margin: 30px;
+            height: 450px;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .controler {
+            background-color: rgb(0, 200, 0);
+            border-radius: 10px;
+            height: 180px;
+            padding: 20px;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+
+    <script>
+
+        var seSTART = new Audio('start.mp3');
+
+        function start() {
+            seSTART.play();
+            let start_scc = document.getElementById("start_sc");
+            start_scc.remove();
+
+            let game_flame = document.createElement("iframe");
+            game_flame.src = "https://playcanv.as/b/d6550cf2";
+            game_flame.style.width = "580";
+            game_flame.style.height = "440";
+
+            let game_scc = document.getElementById("game_sc");
+            game_scc.appendChild(game_flame);
+        }
+
+        function manual() {
+            let cleanmanual = document.getElementById('start_sc');
+            cleanmanual.remove();
+
+            manualflame = document.getElementById("game_sc");
+            let manual = document.createElement("div");
+            manual.style = "text-align:left;"
+            manual.innerHTML = "〇操作方法とルール説明<br>あなたはピ逃げの達人！<br>友人の目をかいくぐって、カードリーダーに学生証をタッチandアウェイだ！<br><br>ルールはとても簡単、<br>PCの方はSpaceキー、スマホの方は画面タッチで学生証を投げられる！<br>友人(手前、女子)と友人(奥、男子)の視線をくぐって、スキャンしよう！";
+            manualflame.appendChild(manual);
+
+            let returntitle = document.createElement("img");
+            returntitle.src = "bt3.png";
+            returntitle.onclick = function () {
+                reset();
+            };
+            manualflame.appendChild(returntitle);
+
+        }
+
+        function credits() {
+            let cleancredits = document.getElementById('start_sc');
+            cleancredits.remove();
+
+            creditsflame = document.getElementById("game_sc");
+            let credits = document.createElement("div");
+            credits.style = "text-align:left;"
+            credits.innerHTML = "〇制作情報<br>　作者：にすみん（@Nispectre）<br><br>〇素材情報<br>　Illustration：ほ（@P0q0__）<br>　BGM：「ピ逃げの達人」/ Nismin<br>　SE：OtoLogic（https://otologic.jp/)<br><br>for MUMD";
+            creditsflame.appendChild(credits);
+
+            let returntitle = document.createElement("img");
+            returntitle.src = "bt3.png";
+            returntitle.onclick = function () {
+                reset();
+            };
+            creditsflame.appendChild(returntitle);
+
+        }
+
+        function reset() {
+            location.reload()
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <IFRAME src="counter/cnt.php" width="1" height="1" scrolling="NO" marginwidth="0" marginheight="0" title="カウンター"
+        id="iframebox"></IFRAME>
+    <div class="screen">
+        <div class="display" id="game_sc">
+            <div id="start_sc">
+                <img src="rogo.jpg" width="500" height="282"><br><br>
+                <img src="bt0.png" onclick="start();">
+                <img src="bt1.png" onclick="manual();">
+                <img src="bt2.png" onclick="credits();">
+                <br>
+            </div>
+        </div>
+        <div class="controler">
+            <button style="width:100px;" id="stres" onclick="reset();">Reset</button>
+        </div>
+</body>
+
+</html>

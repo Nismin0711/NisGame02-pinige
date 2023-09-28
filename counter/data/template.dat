@@ -1,0 +1,10 @@
+<div id="COUNTER">
+ <ul id="TODAY">
+  <li class="NAME">–{“ú</li>
+  <li class="NUMBER">%TODAY%</li>
+ </ul>
+ <ul id="TOTAL">
+  <li class="NAME">—ÝŒv</li>
+  <li class="NUMBER">%TOTAL%</li>
+ </ul>
+</div>

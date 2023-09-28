@@ -1,0 +1,93 @@
+/*** 画面全体の構成 ***/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #333;
+	background: #fff;
+	}
+ul, ol, li {
+	margin: 0;
+	list-style: none;
+	padding-top: 30;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	}
+/*** 本日と累計の枠 ***/
+#TODAY{
+	left:0;
+	line-height:1;
+	position:fixed;
+	width:120px;
+	top:10px;
+	margin-left:10px;
+	z-index:24;
+	background: #DDEEFF;
+	box-shadow: 0px 0px 0px 5px #DDEEFF;
+	border: dashed 2px white;
+	padding: 0.2em 0.5em;
+	color: #454545;
+	}
+#TODAY:after {
+	position: absolute;
+	content: '';
+	left: -7px;
+	top: -7px;
+	border-width: 0 0 15px 15px;
+	border-style: solid;
+	border-color: #fff #fff #AAD0FF;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+	}
+
+#TOTAL{
+	left:0;
+	line-height:1;
+	position:fixed;
+	width:120px;
+	top:10px;
+	margin-top:37px;
+	margin-left:10px;
+	z-index:24;
+	background: #DBFFDB;
+	box-shadow: 0px 0px 0px 5px #DBFFDB;
+	border: dashed 2px white;
+	padding: 0.2em 0.5em;
+	color: #454545;
+	}
+#TOTAL:after {
+	position: absolute;
+	content: '';
+	left: -7px;
+	top: -7px;
+	border-width: 0 0 15px 15px;
+	border-style: solid;
+	border-color: #fff #fff #BBFFBB;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+	}
+
+/*** 文字のデザイン ***/
+#COUNTER {
+	font-size:13px;
+	font-weight:bold;
+	color:#999999;
+	}
+.NAME {
+	float: left;
+	margin:0px;
+	padding:2px 0px 0px 5px;
+	width: 30px;
+	text-align: center;
+	display: block;
+	}
+.NUMBER {
+	float: left;
+	width: 75px;
+	text-align: right;
+	display: block;
+	margin:0px 0px 0px 10px;
+	padding:2px 0px 0px 0px;
+	font-size:13px;
+	font-weight:bold;
+	color:#993300;
+	}
