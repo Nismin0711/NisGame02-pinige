@@ -6,9 +6,6 @@
 Play!
 →[ゲームはこちら](http://nismin.my-style.in/pinige/)
 
-Original BGM
-→[BGMはこちらから](https://www.youtube.com/watch?v=iXs6LAa6YeI)
-
 ## ゲームの概要/ルール
 授業に出たくないけど出席したことにしたい！
 そんな時に一部の大学生が行うイリーガルな技「ピ逃げ」。
