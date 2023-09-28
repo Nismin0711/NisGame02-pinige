@@ -6,6 +6,9 @@
 Play!
 →[ゲームはこちら](http://nismin.my-style.in/pinige/)
 
+Original BGM
+→[BGMはこちらから](https://www.youtube.com/watch?v=iXs6LAa6YeI)
+
 ## ゲームの概要/ルール
 授業に出たくないけど出席したことにしたい！
 そんな時に一部の大学生が行うイリーガルな技「ピ逃げ」。
@@ -20,9 +23,11 @@ Play!
 ## 制作情報
 - 作者：にすみん（@Nispectre）
 - Illustration：ほ（@P0q0__）
-- BGM：「ピ逃げの達人」/ Nismin
+- BGM：「ピ逃げの達人 メインテーマ」/ Nismin
 - SE：OtoLogic（[OtoLogic](https://otologic.jp/)）
 
+- Original BGM「ピ逃げの達人 メインテーマ」
+→[本作BGMはこちらから視聴できます](https://www.youtube.com/watch?v=iXs6LAa6YeI)
 ## 連絡先
 Twitter: [にすみん（@Nispectre）](https://twitter.com/Nispectre)
 Instagram/Threads : [にすみん（@Nispectre）](https://www.instagram.com/nispectre/)
